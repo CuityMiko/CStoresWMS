@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-const _import = require('./_import_' + process.env.NODE_ENV)
+const _import = require('./_import_' + process.env.NODE_ENV) // 路由延迟加载
 // in development env not use Lazy Loading,because Lazy Loading too many pages will cause webpack hot update too slow.so only in production use Lazy Loading
 
 Vue.use(Router)
@@ -42,12 +42,12 @@ export const constantRouterMap = [
     redirect: 'noredirect',
     name: 'Test',
     icon: 'xinrenzhinan',
-    children: [{ path: 'index', component: _import('test/demo'), name: 'Demo' }]
+    children: [{ path: 'demo', component: _import('test/demo'), name: 'Demo' }]
   }
 ]
 
 export default new Router({
-  // mode: 'history', //后端支持可开
+  mode: 'history', // 后端支持可开
   scrollBehavior: () => ({ y: 0 }),
   routes: constantRouterMap
 })

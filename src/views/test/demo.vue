@@ -18,6 +18,9 @@ export default {
             title: 'this is a test demo!'
         }
     },
+    mounted() {
+        this.title = this.$moment().format('YYYY-MM-DD HH:mm:ss');
+    },
     methods: {
         add() {
             this.title = 'this no demo'
