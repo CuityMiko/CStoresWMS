@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "axios": "0.16.2",
+    "babel-polyfill": "^6.26.0",
     "codemirror": "5.26.0",
     "dropzone": "5.1.0",
     "echarts": "3.6.2",

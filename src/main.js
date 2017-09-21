@@ -1,6 +1,10 @@
 /**
  * 项目入口文件
  */
+// 兼容低版本浏览器
+import 'babel-polyfill';
+
+// Vue
 import Vue from 'vue'
 
 // ElementUI
