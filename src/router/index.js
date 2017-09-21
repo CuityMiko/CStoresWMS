@@ -35,6 +35,14 @@ export const constantRouterMap = [
     icon: 'xinrenzhinan',
     noDropdown: true,
     children: [{ path: 'index', component: _import('dashboard/index'), name: 'CStore-WMS' }]
+  },
+  {
+    path: '/test',
+    component: Layout,
+    redirect: 'noredirect',
+    name: 'Test',
+    icon: 'xinrenzhinan',
+    children: [{ path: 'index', component: _import('test/demo'), name: 'Demo' }]
   }
 ]
 
