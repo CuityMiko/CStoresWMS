@@ -65,7 +65,7 @@ module.exports = {
         'no-empty-pattern': 2, // 禁止使用空解构模式
         'no-eval': 1, // 禁用 eval()
         'no-ex-assign': 2, // 禁止对 catch 子句的参数重新赋值
-        'no-extend-native': 1, // 禁止扩展原生类型
+        'no-extend-native': 0, // 禁止扩展原生类型
         'no-extra-bind': 2, // 禁止不必要的 .bind() 调用
         'no-extra-boolean-cast': 2, // 禁止不必要的布尔转换
         'no-extra-parens': [2, 'functions'], // 禁止不必要的括号

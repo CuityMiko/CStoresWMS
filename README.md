@@ -96,6 +96,15 @@
 ## 状态管理
 后台只有user和app配置相关状态使用vuex存在全局，其它数据都由每个业务页面自己管理。
 
+## 关于图标
+- 由于后台管理项目的图标都是定制化的
+- 项目中的小图标采用svg方式
+- 图标已经封装成icon-svg全局组件
+- 页面中直接组件化使用即可：“ <icon-svg icon-class="upper7"></icon-svg> ”
+- svg文件统一存放路径：CStoresWMS\src\icons\svg
+- 如果svg文件不足以支持开发中使用，则参照 (http://www.iconsvg.com) 下载
+- CStoreFE的svg图标统一会在 (http://www.iconfont.cn) 的CStore项目中管理 
+
 ## License
 
 MIT
