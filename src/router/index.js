@@ -41,8 +41,8 @@ export const constantRouterMap = [
     component: Layout,
     redirect: 'noredirect',
     name: 'Test',
-    icon: 'xinrenzhinan',
-    children: [{ path: 'demo', component: _import('test/demo'), name: 'Demo' }]
+    icon: 'notebook43',
+    children: [{ path: 'demo', icon: 'whiteboard8', component: _import('test/demo'), name: 'Demo' }]
   }
 ]
 
