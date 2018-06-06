@@ -50,7 +50,7 @@ Object.defineProperty(Vue.prototype,'$moment',{ value: moment })
 
 // lodash工具类
 import lodash from 'lodash'
-Object.defineProperty(Vue.prototype,"$lodash",{ value: lodash })
+Object.defineProperty(Vue.prototype,'$lodash',{ value: lodash })
 
 // 关闭生产模式下给出的提示
 Vue.config.productionTip = false
